@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ineractive Juice App | Rive</title>
+    <style></style>
+  </head>
+  <body>
+    <div
+      class="px-4 py-2 h-full min-h-[100vh] flex items-center justify-center bg-[#2C3248] flex-col"
+    >
+      <div
+        class="container mx-auto md:py-40 py-10 px-10 bg-[#3A7940] max-w-[960px] rounded-md"
+      >
+        <div
+          class="inner flex justify-center mx-auto my-0 rounded-md overflow-hidden flex-wrap md:flex-row flex-col max-w-[700px]"
+        >
+          <div
+            class="overflow-hidden bg-[#F4F4F4] max-w-full md:max-w-[50%] w-full"
+          >
+            <h2 class="w-full px-4 bg-[#ccc] py-8 font-bold">Select Juice</h2>
+            <div>
+              <h2
+                class="w-full py-8 font-light orange juice"
+                class="juice orange"
+              >
+                Orange Juice
+              </h2>
+              <h2 class="w-full py-8 font-light juice banana">Banana Juice</h2>
+              <h2 class="w-full py-8 font-light juice apple">Apple Juice</h2>
+              <h2 class="w-full py-8 font-light juice mango">Mango Juice</h2>
+            </div>
+          </div>
+          <div
+            class="max-w-full md:max-w-[50%] w-full bg-[#2C3248] relative flex items-center justify-center py-10"
+          >
+            <h4
+              class="text-white/50 text-2xl py-6 px-6 border-dashed border rounded-sm"
+            >
+              Select Juice First
+            </h4>
+
+            <canvas
+              width="332.2"
+              height="558.68"
+              id="juice-canvas"
+              class="hidden"
+            ></canvas>
+            <button
+              id="newbuttn"
+              class="bg-orange-600 hidden hover:shadow-none transition-all hover:translate-y-2"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <footer
+        class="py-4 text-white w-full flex items-center justify-between max-w-[440px]"
+      >
+        <h4 class="font-bold tracking-wider border-none">Credits:</h4>
+        <span class="opacity-60 hover:opacity-100"
+          >Fruit icons by
+          <a href="https://iconscout.com/contributors/aomam" class="underline"
+            >aomam</a
+          ></span
+        >
+        |
+        <span class="opacity-60 hover:opacity-100"
+          >Animation Tool
+          <a href="https://rive.app/" class="underline">Rive</a></span
+        >
+        |
+        <span class="opacity-60 hover:opacity-100">
+          <a href="https://anasniazi.com/" class="underline">anas</a></span
+        >
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

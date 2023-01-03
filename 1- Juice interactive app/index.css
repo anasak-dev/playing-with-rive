@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-2xl relative pl-16 cursor-pointer;
+  }
+  .container {
+    @apply overflow-hidden relative;
+  }
+  h2:not(:last-child) {
+    @apply border-b border-gray-400/20;
+  }
+}
+canvas {
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(-42px);
+  width: 205px;
+  height: 350px;
+}
+.container:before {
+  position: absolute;
+  background-image: url("./assets/pseudo.png");
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  left: -20px;
+  top: -35px;
+  background-repeat: no-repeat;
+}
+.container:after {
+  position: absolute;
+  background-image: url("./assets/pseudo.png");
+  content: "";
+  width: 200px;
+  height: 200px;
+  background-size: contain;
+  right: -20px;
+  bottom: -85px;
+  background-repeat: no-repeat;
+}
+button.disabled {
+  background-color: grey;
+  box-shadow: 1px 5px 0px 0px #282727;
+}
+h2.juice:before {
+  background-image: url("./assets/glass-naked.svg");
+  position: absolute;
+  content: "";
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  top: 28px;
+  background-repeat: no-repeat;
+}
+h2.active {
+  background-color: #0f6017;
+  color: #fff;
+}
+
+button {
+  position: absolute;
+  z-index: 999999;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  max-width: 154px;
+  margin: 0 auto;
+  border-radius: 149px;
+  padding: 15px 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  font-family: Poppins;
+  color: #fff;
+  box-shadow: 1px 5px 0px 0px #a94009;
+}
