@@ -12,6 +12,9 @@
   h2:not(:last-child) {
     @apply border-b border-gray-400/20;
   }
+  span.separator {
+    @apply md:block hidden;
+  }
 }
 canvas {
   height: 100%;

@@ -437,6 +437,16 @@ h2:not(:last-child) {
   border-color: rgb(156 163 175 / 0.2);
 }
 
+span.separator {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  span.separator {
+    display: block;
+  }
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -615,6 +625,14 @@ h2:not(:last-child) {
   max-width: 440px;
 }
 
+.max-w-\[460px\] {
+  max-width: 460px;
+}
+
+.max-w-\[480px\] {
+  max-width: 480px;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -633,6 +651,14 @@ h2:not(:last-child) {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .overflow-hidden {
@@ -858,6 +884,18 @@ button {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:gap-0 {
+    gap: 0px;
+  }
+
+  .md\:gap-3 {
+    gap: 0.75rem;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 
   .md\:py-40 {
